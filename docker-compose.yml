@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  phasereditor:
+    image: sirluky/phasereditor 
+    ports: 
+      - 1959:1959
+    volumes: 
+      - phaser_projects:/root/PhaserEditor2D_Projects
+    
+volumes: 
+  phaser_projects:
